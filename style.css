@@ -1,0 +1,113 @@
+body{
+font-family: Arial, sans-serif;
+margin:0;
+background:#ffffff;
+color:#222;
+}
+
+/* header */
+
+header{
+display:flex;
+justify-content:space-between;
+padding:20px 40px;
+border-bottom:1px solid #eee;
+}
+
+nav a{
+margin-left:20px;
+text-decoration:none;
+color:#333;
+}
+
+/* hero */
+
+.hero{
+position:relative;
+
+height:70vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+
+background-image:url("myphoto.jpg");
+background-size:cover;
+background-position:center;
+color:white;
+}
+
+.hero::before{
+content:"";
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0, 0, 0, 0.5);
+}
+
+.hero h1,
+.hero h2,
+.hero p{
+position:relative;
+}
+
+.hero h1{
+font-size:90px;
+letter-spacing:4px;
+text-shadow:0 3px 10px rgba(0,0,0,0.6);
+}
+
+
+/* section */
+
+section{
+padding:80px 15%;
+}
+
+h2{
+margin-bottom:30px;
+}
+
+/* works grid */
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:30px;
+}
+
+.work img{
+width:100%;
+border-radius:8px;
+}
+
+.work p{
+text-align:center;
+margin-top:10px;
+}
+
+/* footer */
+
+footer{
+text-align:center;
+padding:30px;
+border-top:1px solid #eee;
+}
+
+.download-btn{
+display:inline-block;
+padding:12px 24px;
+background:green;
+color:#fff;
+text-decoration:none;
+border-radius:6px;
+font-weight:bold;
+transition:0.3s;
+}
+
+.download-btn:hover{
+background:#444;
+}
